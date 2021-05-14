@@ -1,38 +1,99 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+
+.Boot {
+  background-color: #0066cc;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.BootHead {
   color: white;
+  text-align: center;
+  font-family: Play;
+  margin-top: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.WindowsLogo {
+  text-align: center;
+  color: white;
+  font-size: 250px;
+  padding-top: 190px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.windowsStart {
+  color: white;
+  font-size: 25px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.windowsStart:hover {
+  color: #00a2ed;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  height: 35px;
+  width: 100%;
+}
+
+.startPanel {
+  top: 27%;
+  background-color: #1a171e;
+  height: 70vh;
+  width: 50vh;
+  position: fixed;
+  transition: all 0.3s ease-out;
+  bottom: 0;
+}
+
+.startPanel-close {
+  top: 99%;
+  background-color: #1a171e;
+  height: 70vh;
+  width: 50vh;
+  position: fixed;
+  transition: all 0.3s ease-out;
+  bottom: 0;
+}
+
+.desktop-icons {
+  background-color: transparent;
+  height: 16vh;
+  width: 12vh;
+  margin-left: 20px;
+}
+
+.desktop-icons:hover {
+  background-color: rgba(158, 185, 255, 1);
+  opacity: 0.2;
+}
+
+.desktop-icons-img {
+  height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.desktop-icons-title {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  font-family: Play;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }

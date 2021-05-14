@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.VolumeBtn{
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.VolumeBtn:hover{
+  cursor: pointer;
+}
