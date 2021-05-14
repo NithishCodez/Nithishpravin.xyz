@@ -2,8 +2,9 @@
     width: 100px;
     height: 70px;
     position: absolute;
+    margin-top: 50px;
     left: 50%;
-    margin-top: 20px;
+    margin-bottom: 50px;
     animation: rotatePreloader 2s infinite ease-in;
   }
   @keyframes rotatePreloader {
