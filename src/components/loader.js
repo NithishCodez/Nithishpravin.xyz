@@ -3,8 +3,8 @@ import "./loader.css";
 
 export default function loader() {
   return (
-    <div class="holder">
-      <div class="preloader">
+    <div className="holder">
+      <div className="preloader">
         <div></div>
         <div></div>
         <div></div>
