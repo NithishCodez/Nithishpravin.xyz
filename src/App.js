@@ -6,6 +6,8 @@ import youtubelogo from "./imgs/youtube-logo.png";
 import { AiFillWindows } from "react-icons/ai";
 import Loader from "./components/loader";
 import Slide from "react-reveal/Slide";
+import RectangleSelection from "react-rectangle-selection"
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,14 +27,29 @@ function App() {
       <div className={"Boot"}>
         <AiFillWindows className={"WindowsLogo"} />
         <Loader />
-        <h1 className={"BootHead"}>Starting Windows</h1>
+        <h1 className={"BootHead"}>Welcome</h1>
+
       </div>
     );
   }
 
   function Desktop() {
     return (
+        
       <div>
+       <RectangleSelection
+       onSelect={(e, coords) => {
+       this.setState({
+          origin: coords.origin,
+          target: coords.target
+       });
+      }}
+
+      style={{
+        backgroundColor: "rgba(0,0,255,0.4)",
+        borderColor: "blue"
+      }}
+     >
         <div
           className={"Desktop"}
           style={{
@@ -78,6 +95,7 @@ function App() {
             }}
           />
         </div>
+        </RectangleSelection>
       </div>
     );
   }

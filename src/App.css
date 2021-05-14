@@ -13,20 +13,32 @@
   text-align: center;
   font-family: Play;
   margin-top: 70px;
+  padding-top: 70px;
+}
+.welcome {
+  color: white;
+  text-align: center;
+  font-family: Play;
+  font-style:thin;
+  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .WindowsLogo {
   text-align: center;
   color: white;
   font-size: 250px;
-  padding-top: 190px;
+  padding-top: 150px;
+  padding-bottom: 0px;
+  
 }
 
 .windowsStart {
   color: white;
   font-size: 25px;
-  padding-left: 5px;
-  padding-top: 5px;
+  padding-left: 15px;
+  padding-top: 15px;
+
 }
 
 .windowsStart:hover {
@@ -37,7 +49,7 @@
   position: fixed;
   bottom: 0;
   background-color: black;
-  height: 35px;
+  height: 50px;
   width: 100%;
 }
 
@@ -57,7 +69,7 @@
   height: 70vh;
   width: 50vh;
   position: fixed;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
   bottom: 0;
 }
 
@@ -66,15 +78,17 @@
   height: 16vh;
   width: 12vh;
   margin-left: 20px;
+ 
 }
 
-.desktop-icons:hover {
+.desktop-icons-img:hover {
   background-color: rgba(158, 185, 255, 1);
   opacity: 0.2;
 }
 
 .desktop-icons-img {
   height: 70px;
+   margin-bottom: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -86,6 +100,7 @@
 .desktop-icons-title {
   text-align: center;
   color: white;
+  padding-bottom: 5px;
   margin-top: 30px;
   font-family: Play;
 }
